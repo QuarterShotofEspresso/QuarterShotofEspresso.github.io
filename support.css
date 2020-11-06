@@ -1,0 +1,50 @@
+
+
+.brdr{
+    border: 1px solid black;
+}
+
+
+.proofs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.custom-theorem::before{
+    content: 'Theorem. ';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.custom-theorem{
+    display: block;
+    margin: 0px 0px 12px 0px;
+    font-style: italic;
+}
+
+datetime{
+    font-family: Amiri, serif;
+    font-style: normal;
+    font-size: 18px;
+    text-align: right;
+    margin: 0px 15px 0px 0px;
+}
+
+horizontal-line{
+    height: 0;
+    width: 20%;
+    margin-left: auto;
+    margin-right:auto;
+    border-top: 1px solid black;
+}
+
+reference{
+    font-family: Amiri, serif;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}

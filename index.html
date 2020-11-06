@@ -2,14 +2,31 @@
 
     <head>
         <link rel="stylesheet" href="https://latex.now.sh/style.css">
+        <link rel='stylesheet' href='support.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                "HTML-CSS": { scale: 200, linebreaks: { automatic: true } },
+                SVG: { linebreaks: { automatic:true } },
+                displayAlign: "left" });
+        </script>
     </head>
 
     <body>
-
-        <header><h1>Sleepy Joy</h1></header>
-        <p class='author'> Ratnodeep Bandyopadhyay </p>
-
+        <div class='proofs-container'>
+            <datetime>11.6.20</datetime> 
+            <div class='custom-theorem'>There are infinitely many primes.</div>
+            <div class='proof'>
+                Suppose there is a finite number of primes \(\small{p_1, p_2, p_3, ..., p_n}\).
+                Let \(\small{P}\) be an integer defined as
+                \(\small{P = p_1 p_2 p_3 ... p_n + 1}\). Let \(\small{p}\) be a prime dividing \(\small{P}\).
+                Then \(\small{p}\) cannot be any prime \(\small{p_1, p_2, p_3, ..., p_n}\)
+                becuase \(\small{p}\) would divide \(\small{P - p_1 p_2 p_3 ... p_n = 1}\)
+                which is impossible. So \(\small{p}\) must be another prime.
+            </div>
+            <horizontal-line></horizontal-line>
+            <reference>Euclid</reference>
+        </div>
     </body>
-
 </html>
